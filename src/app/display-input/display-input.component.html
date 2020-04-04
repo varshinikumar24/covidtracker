@@ -1,24 +1,61 @@
 
-<h2>Search Detail</h2>
+<h2>{{ datas$.country }}</h2>
 <div class="container">
+    
   <div class="row">
     <div class="col-md-12">
         
+       
       <form > 
-        <h4> <strong class="side">Country name:</strong> {{ datas$.country }}</h4>
-        <h4><strong class="side">Total Cases :</strong> {{ datas$.cases }}</h4>
-        <h4><strong class="side">Today Cases :</strong> {{ datas$.todayCases }}</h4>
-        <h4><strong class="side">Deaths :</strong> {{ datas$.deaths }}</h4>
-        <h4><strong class="side">Today Deaths :</strong> {{ datas$.todayDeaths }}</h4>
-        <h4><strong class="side">Recovered :</strong> {{ datas$.recovered }}</h4>
-        <h4><strong class="side">Active :</strong> {{ datas$.active }}</h4>
-        <h4><strong class="side">Critical :</strong> {{ datas$.critical }}</h4>
-        <h4><strong class="side">CasesPerOneMillion :</strong> {{ datas$.casesPerOneMillion }}</h4>
-        <h4><strong class="side">DeathsPerOneMillion :</strong> {{ datas$.deathsPerOneMillion }}</h4>
+        <table>
+       <tr>
+           <td><h4> <strong class="side">Country name: </strong></h4></td>
+            <td class="detailCol"><h4>{{ datas$.country }}</h4></td>
+        </tr> 
+        <tr>
+            <td><h4> <strong class="side">Total Cases: </strong></h4></td>
+             <td class="detailCol"><h4>{{ datas$.cases }}</h4></td>
+         </tr> 
+         <tr>
+            <td><h4> <strong class="side">Today Cases: </strong></h4></td>
+             <td class="detailCol"><h4>{{ datas$.todayCases }}</h4></td>
+         </tr>
+         <tr>
+            <td><h4> <strong class="side">Deaths: </strong></h4></td>
+             <td class="detailCol"> <h4>{{ datas$.deaths }}</h4></td>
+         </tr> 
+         <tr>
+            <td><h4> <strong class="side">Today Deaths: </strong></h4></td>
+             <td class="detailCol"><h4>{{ datas$.todayDeaths }}</h4></td>
+         </tr> 
+         <tr>
+            <td><h4> <strong class="side">Recovered :</strong></h4></td>
+             <td class="detailCol"><h4>{{ datas$.recovered }}</h4></td>
+         </tr> 
+         <tr>
+            <td><h4> <strong class="side">Active: </strong></h4></td>
+             <td class="detailCol"><h4>{{ datas$.active }}</h4></td>
+         </tr> 
+         <tr>
+            <td><h4> <strong class="side">Critical: </strong></h4></td>
+             <td class="detailCol"><h4>{{ datas$.critical }}</h4></td>
+         </tr> 
+         <tr>
+            <td><h4> <strong class="side">CasesPerOneMillion: </strong></h4></td>
+             <td class="detailCol"><h4>{{ datas$.casesPerOneMillion }}</h4></td>
+         </tr> 
+         <tr>
+            <td><h4> <strong class="side">DeathsPerOneMillion  </strong></h4></td>
+             <td class="detailCol"><h4> {{ datas$.deathsPerOneMillion }}</h4></td>
+         </tr> 
+         
+        
 
+    
+        <button class="btn btn-success" type="button"  routerLink="/" >Back</button>
+    </table>    
+    </form> 
 
-        <button type="button"  routerLink="/" ></button>
-        </form> 
     </div>
   </div>
 </div>

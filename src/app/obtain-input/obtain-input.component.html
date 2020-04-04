@@ -3,14 +3,14 @@
     <div class="col-md-12 form-container" >
     <form [formGroup]="diseaseForm" (ngSubmit)="onSubmit(countryName)" #f="ngForm">
        <div class="form-group">
-           <label style="margin:10px;" >Please enter first three letters of country name: </label>
+           <label style="margin:10px;" >Please enter country name: </label>
             <input type="text" placeholder="Enter details" class="form-control" name="countryName"
               formControlName="country" [(ngModel)]="countryName">
               
-            <button  type="submit" routerLink="/display/{{cname}}" class="btn btn-success" >Search</button> <br>  
-            <div class="btn btn-info list" >
+            <button  type="submit" routerLink="/display/{{countryName}}" class="btn btn-success" >Search</button> <br>  
+            <div class="btn  list" >
               <li class="dropdown " appDropdown>
-                  <a href="#" class="dropdown-toggle" role="button">Country List<span class="caret"></span></a>
+                  <a href="/" class="dropdown-toggle" role="button">Country List <span class="caret" style="margin-left: 5%;"></span></a>
                   <ul class="dropdown-menu">
                       <li><a href="/display/China">China</a></li>
                       <li><a href="/display/usa">USA</a></li>
