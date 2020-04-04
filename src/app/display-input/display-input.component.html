@@ -1,7 +1,6 @@
 
 <h2>{{ datas$.country }} <img src="{{(datas$.countryInfo).flag}}" alt=""> </h2>
-<div class="container">
-    
+<div class="container" [style.background]="determineBackground()">
   <div class="row">
     <div class="col-md-12">
         

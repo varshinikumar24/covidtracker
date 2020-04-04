@@ -14,23 +14,8 @@
               <li class="dropdown " appDropdown>
                   <a  class="dropdown-toggle" role="button">Country List <span class="caret" style="margin-left: 5%;"></span></a>
                   <ul class="dropdown-menu">
-                      <li><a href="/display/China">China</a></li>
-                      <li><a href="/display/usa">USA</a></li>
-                      <li><a href="/display/spain">spain</a></li>
-                      <li><a href="/display/india">India</a></li>
-                      <li><a href="/display/Italy">Italy</a></li>
-                      <li><a href="/display/Germany">Germany</a></li>
-                      <li><a href="/display/Iran">Iran</a></li>
-                      <li><a href="/display/France">France</a></li>
-                      <li><a href="/display/UK">UK</a></li>
-                      <li><a href="/display/Cuba">Cuba</a></li>
-                      <li><a href="/display/Turkey">Turkey</a></li>
-                      <li><a href="/display/Belgium">Belgium</a></li>
-                      <li><a href="/display/canada">canada</a></li>
-                      <li><a href="/display/Brazil">Brazil</a></li>
-                      <li><a href="/display/Sweden">Sweden</a></li>
-                      <li><a href="/display/Russia">Russia</a></li>
-                      <li><a href="/display/Afganisthan">Afganisthan</a></li>
+                    <li *ngFor="let data of datas$ "><a href="/display/{{data.country}}">{{data.country}}</a></li>
+                      
                   </ul>
               </li>
           </div>

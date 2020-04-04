@@ -31,7 +31,12 @@ export class DisplayInputComponent implements OnInit {
     );
     
   }
-  
+  determineBackground(){
+//     this.background= 
+// this.sanitization.bypassSecurityTrustStyle(`url(${this.section.backgroundSrc}) no-repeat`);
+    //let path= (this.datas$).countryInfo.flag;
+    
+  }
 
 
 }

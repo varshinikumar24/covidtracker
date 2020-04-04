@@ -6,7 +6,8 @@ import { FormGroup,  FormControl,  Validators, NgForm } from '@angular/forms';
 @Component({
   selector: 'app-obtain-input',
   templateUrl: './obtain-input.component.html',
-  styleUrls: ['./obtain-input.component.scss']
+  styleUrls: ['./obtain-input.component.scss'],
+  
 })
 export class ObtainInputComponent implements OnInit {
   @ViewChildren('f') trackingForm:NgForm;
@@ -19,13 +20,15 @@ export class ObtainInputComponent implements OnInit {
     this.diseaseForm=new FormGroup({
       'country' : new FormControl(null)
    });
+   this.data.getDetail().subscribe(
+    data => this.datas$ = data 
+  );
+   
     
   }
 
   ngOnInit(){
-    this.data.getDetail().subscribe(
-      data => this.datas$ = data 
-    );
+    
   }
   nameLettersCount(){
     console.log((this.diseaseForm.value.country).length);
