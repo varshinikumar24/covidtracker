@@ -27,12 +27,20 @@ export class ObtainInputComponent implements OnInit {
       data => this.datas$ = data 
     );
   }
-  
+  nameLettersCount(){
+    console.log((this.diseaseForm.value.country).length);
+    if((this.diseaseForm.value.country.length)<=3){
+      return true;
+    }
+  }
   
   onSubmit(name :string){
+    
     this.diseaseForm.get('country').setValue(this.trackingForm.value.country);;
     //this.router.navigateByUrl("/details/"+name);
+    
   }
 }
+
 
 

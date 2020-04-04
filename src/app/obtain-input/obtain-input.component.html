@@ -1,3 +1,4 @@
+<h2>COVID TRACKER</h2>
 <div class="container">
     <div class="row">
     <div class="col-md-12 form-container" >
@@ -5,9 +6,10 @@
        <div class="form-group">
            <label style="margin:10px;" >Please enter country name: </label>
             <input type="text" placeholder="Enter details" class="form-control" name="countryName"
-              formControlName="country" [(ngModel)]="countryName">
-              
-            <button  type="submit" routerLink="/display/{{countryName}}" class="btn btn-success" >Search</button> <br>  
+              formControlName="country" [(ngModel)]="countryName" >
+              <p class="help" *ngIf="nameLettersCount() && diseaseForm.controls['country'].touched">Please enter atleast four letters</p>
+            
+              <button  type="submit" routerLink="/display/{{countryName}}" class="btn btn-success" >Search</button> <br>  
             <div class="btn  list" >
               <li class="dropdown " appDropdown>
                   <a  class="dropdown-toggle" role="button">Country List <span class="caret" style="margin-left: 5%;"></span></a>
