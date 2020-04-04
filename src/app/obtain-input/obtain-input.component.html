@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="row">
+    <div class="col-md-12 form-container" >
+    <form [formGroup]="diseaseForm" (ngSubmit)="onSubmit(countryName)" #f="ngForm">
+       <div class="form-group">
+           <label style="margin:10px;" >Please enter first three letters of country name: </label>
+            <input type="text" placeholder="Enter details" class="form-control" name="countryName"
+              formControlName="country" [(ngModel)]="countryName">
+              
+            <button  type="submit" routerLink="/display/{{cname}}" class="btn btn-success" >Search</button> <br>  
+            <div class="btn btn-info list" >
+              <li class="dropdown " appDropdown>
+                  <a href="#" class="dropdown-toggle" role="button">Country List<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                      <li><a href="/display/China">China</a></li>
+                      <li><a href="/display/usa">USA</a></li>
+                      <li><a href="/display/spain">spain</a></li>
+                      <li><a href="/display/india">India</a></li>
+                      <li><a href="/display/Italy">Italy</a></li>
+                      <li><a href="/display/Germany">Germany</a></li>
+                      <li><a href="/display/Iran">Iran</a></li>
+                      <li><a href="/display/France">France</a></li>
+                      <li><a href="/display/UK">UK</a></li>
+                      <li><a href="/display/Cuba">Cuba</a></li>
+                      <li><a href="/display/Turkey">Turkey</a></li>
+                      <li><a href="/display/Belgium">Belgium</a></li>
+                      <li><a href="/display/canada">canada</a></li>
+                      <li><a href="/display/Brazil">Brazil</a></li>
+                      <li><a href="/display/Sweden">Sweden</a></li>
+                      <li><a href="/display/Russia">Russia</a></li>
+                      <li><a href="/display/Afganisthan">Afganisthan</a></li>
+                  </ul>
+              </li>
+          </div>
+          </div>
+     </form>
+   </div>
+   </div>
+</div>
+
+
