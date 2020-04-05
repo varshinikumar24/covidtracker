@@ -37,6 +37,6 @@ export class DisplayInputComponent implements OnInit {
     //let path= (this.datas$).countryInfo.flag;
     
   }
-
+//[style.background-image]="'url(('{{datas$.countryInfo).flag}}')'"
 
 }

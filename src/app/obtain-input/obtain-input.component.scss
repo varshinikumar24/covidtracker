@@ -2,6 +2,9 @@
     margin-top:1%; 
     align-items: center;
 }
+.form-container{
+    width:100%;
+}
 .list{
     margin-top: 1%;
     color: lightseagreen;
@@ -16,10 +19,26 @@
 }
 h2{
     text-align: center;
-    margin: 10% 0 0 0;
-    color: rgb(32, 85, 32);
+    margin: 10% 0 2% 0;
+    padding-top: 4% ;
+    color: rgb(85, 32, 32);
+    font-family:"Georgia, serif";
+    font-weight: bolder;
+    font-size:45px;
 }
 .help{
     color:red;
     margin-top:10px;
+    font-weight: bold;
+}
+.bodyContainer{
+    background-color: #FFDAB9F1;
+   // background-color:rgb(255, 242, 245);
+    margin:10% 10% 10% 10%;
+    padding:0 2% 10% 2%;
+    
+   
+}
+input{
+    width:50%;
 }

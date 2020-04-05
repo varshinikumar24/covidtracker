@@ -22,7 +22,7 @@ import {DropdownDirectives} from './shared/dropdown.directives';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule,
+    ReactiveFormsModule.withConfig({warnOnNgModelWithFormControl: 'never'}),
     RouterModule,
     
   ],

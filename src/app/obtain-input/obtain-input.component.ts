@@ -3,6 +3,7 @@ import { DataServiceService } from '../data-service.service';
 import { Observable } from 'rxjs';
 import { Router, RouterModule,ActivatedRoute } from '@angular/router';
 import { FormGroup,  FormControl,  Validators, NgForm } from '@angular/forms';
+import {SortPipe} from '../sort-pipe'
 @Component({
   selector: 'app-obtain-input',
   templateUrl: './obtain-input.component.html',
@@ -15,7 +16,7 @@ export class ObtainInputComponent implements OnInit {
   diseaseForm: FormGroup;
   countryName="";
   country=""
-  //<a href="/display/Ind" >
+  
   constructor(private data: DataServiceService) { 
     this.diseaseForm=new FormGroup({
       'country' : new FormControl(null)

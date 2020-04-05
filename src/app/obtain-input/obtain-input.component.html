@@ -1,13 +1,14 @@
+<div class="bodyContainer">
 <h2>COVID TRACKER</h2>
-<div class="container">
-    <div class="row">
-    <div class="col-md-12 form-container" >
+<div class="container ">
+    
+    <div class=" form-container" >
     <form [formGroup]="diseaseForm" (ngSubmit)="onSubmit(countryName)" #f="ngForm">
        <div class="form-group">
-           <label style="margin:10px;" >Please enter country name: </label>
+           <label style="margin:10px;color:rgb(85, 32, 32); " >Please enter  country name: </label>
             <input type="text" placeholder="Enter details" class="form-control" name="countryName"
               formControlName="country" [(ngModel)]="countryName" >
-              <p class="help" *ngIf="nameLettersCount() && diseaseForm.controls['country'].touched">Please enter atleast four letters</p>
+              <p class="help" *ngIf="nameLettersCount() && diseaseForm.controls['country'].touched">Please enter atleast three letters</p>
             
               <button  type="submit" routerLink="/display/{{countryName}}" class="btn btn-success" >Search</button> <br>  
             <div class="btn  list" >
@@ -22,7 +23,7 @@
           </div>
      </form>
    </div>
-   </div>
+  </div>
 </div>
 
 
