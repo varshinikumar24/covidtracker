@@ -5,13 +5,16 @@
     <div class=" form-container" >
     <form [formGroup]="diseaseForm" (ngSubmit)="onSubmit(countryName)" #f="ngForm">
        <div class="form-group">
-           <label style="margin:10px;color:rgb(85, 32, 32); " >Please enter  country name: </label>
+           <label >Please enter  country name: </label>
             <input type="text" placeholder="Enter details" class="form-control" name="countryName"
               formControlName="country" [(ngModel)]="countryName" >
               <p class="help" *ngIf="nameLettersCount() && diseaseForm.controls['country'].touched">Please enter atleast three letters</p>
             
               <button  type="submit" routerLink="/display/{{countryName}}" class="btn btn-success" >Search</button> <br>  
-            <div class="btn  list" >
+       </div>
+       <div class="form-group">
+              <label>Select Country name from dropdown :</label><br>
+              <div class="btn  list" >
               <li class="dropdown " appDropdown>
                   <a  class="dropdown-toggle" role="button">Country List <span class="caret" style="margin-left: 5%;"></span></a>
                   <ul class="dropdown-menu">

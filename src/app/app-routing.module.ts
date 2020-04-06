@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ObtainInputComponent } from './obtain-input/obtain-input.component';
 import { DisplayInputComponent } from './display-input/display-input.component';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 const routes: Routes = [
   {
     path: '',
@@ -16,7 +16,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes) ,ReactiveFormsModule ],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
