@@ -33,7 +33,7 @@ export class ObtainInputComponent implements OnInit {
   }
   nameLettersCount(){
     console.log((this.diseaseForm.value.country).length);
-    if((this.diseaseForm.value.country.length)<=3){
+    if((this.diseaseForm.value.country.length)<3){
       return true;
     }
   }
