@@ -4,7 +4,7 @@
     
 }
 .secondContainer{
-    margin:5% 20%;
+    margin:5% 5%;
     align-items: center;
     border-color: maroon;
 }
@@ -14,11 +14,7 @@ h2{
     padding-top: 2%;
     color: rgb(32, 85, 32);
 }
-.btn-success{
-    align-items: center;
-    margin: 4% 0 4% 4%;
-    padding-bottom: 5%;
-}
+
 .detailCol{
     margin-left: 5%;
     text-align: center;
@@ -29,7 +25,6 @@ img{
     width: 15%;
 }
 .bodycontainer{
-    //background-color: maroon;
     background-image: url(https://img.etimg.com/photo/msid-74776292/coronavirus1_istock.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -43,4 +38,10 @@ img{
     background-color: hue($color: rgb(130, 195, 211));
   
     
+}
+table{
+    margin-bottom: 5%;
+}
+.btn-primary{
+    margin-bottom: 2%;
 }

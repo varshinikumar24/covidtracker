@@ -5,7 +5,7 @@
                 <h2>{{ datas$.country }} <img src="{{(datas$.countryInfo).flag}}" alt=""> </h2>
                 <div class="container secondContainer" >
                   <div class="row">
-                    <div class="col-md-5">
+                    <div class="col-x2-12">
                         
                       <form > 
                         <table>
@@ -49,14 +49,19 @@
                             <td><h4> <strong class="side">DeathsPerOneMillion  </strong></h4></td>
                              <td class="detailCol"><h4> {{ datas$.deathsPerOneMillion }}</h4></td>
                          </tr> 
-                         
-                        
-                
+                        </table>    
+                   
+                         <div class="row">
+                               <div class="col-md-2">
+                                <button class="btn btn-primary" type="button" routerLink="/countryList">All countries List</button>
+                               </div>
+                                <div class="col-md-2">
+                                 <button class="btn btn-danger" type="button"  routerLink="/" >Back</button>
+                                </div>
+                                
+                            </div>
                     
-                        <button class="btn btn-success" type="button"  routerLink="/" >Back</button>
-                    </table>    
-                    </form> 
-                
+                        </form> 
                     </div>
                   </div>
                 </div>

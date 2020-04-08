@@ -12,22 +12,21 @@ import {SortPipe} from '../sort-pipe'
 })
 export class ObtainInputComponent implements OnInit {
   @ViewChildren('f') trackingForm:NgForm;
-  datas$:Object;
+  datas$
   diseaseForm: FormGroup;
   countryName="";
   country=""
-  
+  i=0;
   constructor(private data: DataServiceService) { 
+    
     this.diseaseForm=new FormGroup({
       'country' : new FormControl(null)
    });
    this.data.getDetail().subscribe(
     data => this.datas$ = data 
   );
-   
-    
+     
   }
-
   ngOnInit(){
     
   }

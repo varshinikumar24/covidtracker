@@ -11,8 +11,8 @@ import { FormGroup,  FormControl,  Validators, NgForm } from '@angular/forms';
 export class DisplayInputComponent implements OnInit {
 
   @ViewChildren('f') trackingForm:NgForm;
-  datas$: Object;
   
+  datas$
   diseaseForm: FormGroup;
   constructor(private data: DataServiceService,private router: Router,private route:ActivatedRoute) { 
     
