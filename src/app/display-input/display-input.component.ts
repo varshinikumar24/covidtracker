@@ -1,4 +1,4 @@
-import { Component, OnInit,ViewChildren } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { DataServiceService } from '../data-service.service';
 import { Observable } from 'rxjs';
 import { Router, RouterModule,ActivatedRoute } from '@angular/router';
@@ -9,8 +9,6 @@ import { FormGroup,  FormControl,  Validators, NgForm } from '@angular/forms';
   styleUrls: ['./display-input.component.scss']
 })
 export class DisplayInputComponent implements OnInit {
-
-  @ViewChildren('f') trackingForm:NgForm;
   
   datas$
   diseaseForm: FormGroup;

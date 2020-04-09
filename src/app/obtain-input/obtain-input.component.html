@@ -3,7 +3,7 @@
 <div class="container ">
     
     <div class=" form-container" >
-    <form [formGroup]="diseaseForm" (ngSubmit)="onSubmit(countryName)" #f="ngForm">
+    <form [formGroup]="diseaseForm" (ngSubmit)="onSubmit(country)" #f="ngForm">
        <div class="form-group">
            <label >Please enter country name or select from dropdown :</label>
             <input type="text" placeholder="Enter details" class="form-control" autocomplete="off" name="countryName"

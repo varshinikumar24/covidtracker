@@ -3,25 +3,26 @@
     margin:0 5% 0 0;
     background-color: hue($color: rgb(130, 195, 211));
     background-image: url(https://wallpaperhd.wiki/wp-content/uploads/hd-backgrounds-websites-hd-pics-photos-beautiful-attractive-web-water-drops-nature-hd-quality-desktop-background-wallpaper.jpg);
-   
     width:100%;
 }
 .cardsContainer1{
     background-color: rgb(208, 221, 223);
-    margin:10% 10% 1% 20%;
+    margin:10% 10% 1% 25%;
     padding: 2%; 
-    background-color: hue($color: rgb(130, 195, 211));
+    
     width:50%;
+    height:50%;
     border-radius: 10px;
     align-items: center;
     border: 5px solid rgb(20, 85, 105);
 }
 .cardsContainer{
     background-color: rgb(208, 221, 223);
-    margin:2% 10% 10% 20%;
+    margin:2% 10% 10% 25%;
     padding: 2%;
-    background-color: hue($color: rgb(130, 195, 211));
+   // background-color: hue($color: rgb(130, 195, 211));
     width:50%;
+    height:50%;
     border-radius: 10px;
     align-items: center;
     border: 5px solid rgb(20, 85, 105);

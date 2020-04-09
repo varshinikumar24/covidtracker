@@ -1,4 +1,4 @@
-import { Component, OnInit,ViewChildren } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { DataServiceService } from '../data-service.service';
 import { Observable } from 'rxjs';
 import { Router, RouterModule,ActivatedRoute } from '@angular/router';
@@ -12,9 +12,7 @@ import {SortPipe} from '../sort-pipe'
   
 })
 export class ObtainInputComponent implements OnInit {
-  @ViewChildren('f') trackingForm:NgForm;
   datas$
-
   diseaseForm: FormGroup;
   countryName="";
   country=""
@@ -38,10 +36,10 @@ export class ObtainInputComponent implements OnInit {
     }
   }
   
-  onSubmit(name :string){
+  onSubmit(name : string){
     //this.diseaseForm.value.country=name;
-    this.diseaseForm.get('country').setValue(this.trackingForm.value.country);;
-    //this.router.navigateByUrl("/details/"+name);
+    this.diseaseForm.get('country').setValue(name);;
+    
     
   }
 }
