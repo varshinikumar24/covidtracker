@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule,LOCALE_ID  } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
@@ -11,16 +11,16 @@ import { DataServiceService } from './data-service.service';
 import { RouterModule, Routes} from '@angular/router';
 import {DropdownDirectives} from './shared/dropdown.directives';
 import { ListCountryCountComponent } from './list-country-count/list-country-count.component';
-import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
-import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient} from '@angular/common/http';
+import { CardsDisplayComponent } from './cards-display/cards-display.component';
 @NgModule({
   declarations: [
     AppComponent,
     ObtainInputComponent,
     DisplayInputComponent,
     DropdownDirectives,
-    ListCountryCountComponent
+    ListCountryCountComponent,
+    CardsDisplayComponent
   ],
   imports: [
     BrowserModule,
@@ -28,22 +28,9 @@ import {HttpClient} from '@angular/common/http';
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule.withConfig({warnOnNgModelWithFormControl: 'never'}),
-    RouterModule,
-    
-        TranslateModule.forRoot({
-            loader: {
-                provide: TranslateLoader,
-                useFactory: HttpLoaderFactory,
-                deps: [HttpClient]
-            }
-        })
- 
-    
+    RouterModule  
   ],
   providers: [DataServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-export function HttpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(http);
-}

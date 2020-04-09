@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {TranslateService} from '@ngx-translate/core';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,7 +7,9 @@ import {TranslateService} from '@ngx-translate/core';
 })
 export class AppComponent {
   title = 'covidtracker';
-  constructor(private translate: TranslateService) {
-    translate.setDefaultLang('en');
+  constructor() {
+    
+    
 }
+
 }

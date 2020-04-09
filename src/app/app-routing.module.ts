@@ -4,9 +4,15 @@ import { ObtainInputComponent } from './obtain-input/obtain-input.component';
 import { DisplayInputComponent } from './display-input/display-input.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ListCountryCountComponent } from './list-country-count/list-country-count.component';
+import { CardsDisplayComponent } from './cards-display/cards-display.component';
 const routes: Routes = [
+  
   {
     path: '',
+    component: CardsDisplayComponent
+  },
+  {
+    path: 'getInput',
     component: ObtainInputComponent
   },
   {
