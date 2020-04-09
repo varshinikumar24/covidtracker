@@ -10,11 +10,12 @@ import { FormGroup,  FormControl,  Validators, NgForm } from '@angular/forms';
 })
 export class ListCountryCountComponent implements OnInit {
   
+datas$
 
-  datas$
   constructor(private data: DataServiceService,private router: Router,private route:ActivatedRoute) {
     
    }
+
   ngOnInit(): void {
     this.data.getDetail().subscribe(
       data => this.datas$ = data 
