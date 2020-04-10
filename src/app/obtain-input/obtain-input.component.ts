@@ -16,7 +16,7 @@ export class ObtainInputComponent implements OnInit {
   diseaseForm: FormGroup;
   countryName="";
   country=""
-  inList=[];
+  inList=false;
 
   constructor(private data: DataServiceService,private router: Router) { 
     
@@ -48,12 +48,11 @@ export class ObtainInputComponent implements OnInit {
       }
       else
       {
-        
+        this.inList=true;
       }
     }  
   } 
 }
-  
-//this.router.navigate(['/display/','name']);
+
 
 
