@@ -3,14 +3,14 @@
 <div class="container ">
     
     <div class=" form-container" >
-    <form [formGroup]="diseaseForm" (ngSubmit)="onSubmit(country)" #f="ngForm">
+    <form [formGroup]="diseaseForm" (ngSubmit)="onSubmit(countryName)" #f="ngForm">
        <div class="form-group">
            <label >Please enter country name or select from dropdown :</label>
             <input type="text" placeholder="Enter details" class="form-control" autocomplete="off" name="countryName"
               formControlName="country" [(ngModel)]="countryName" >
               <p class="help" *ngIf="nameLettersCount() && diseaseForm.controls['country'].touched">Please enter atleast three letters</p>
                <!-- <p class="help" *ngIf="!inList && nameLettersCount()&& diseaseForm.controls['country'].touched"> Not in List</p> -->
-              <button  type="submit" routerLink="/display/{{countryName}}" class="btn btn-success" [disabled]="nameLettersCount()">Search</button> <br>  
+              <button  type="submit"  class="btn btn-success" [disabled]="nameLettersCount()">Search</button> <br>  
        </div>
        <div class="form-group">
          <div class="row">

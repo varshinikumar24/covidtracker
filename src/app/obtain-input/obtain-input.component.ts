@@ -16,8 +16,9 @@ export class ObtainInputComponent implements OnInit {
   diseaseForm: FormGroup;
   countryName="";
   country=""
+  inList=[];
 
-  constructor(private data: DataServiceService) { 
+  constructor(private data: DataServiceService,private router: Router) { 
     
     this.diseaseForm=new FormGroup({
       'country' : new FormControl(null)
@@ -27,8 +28,8 @@ export class ObtainInputComponent implements OnInit {
   );
   }
   ngOnInit(){
-    
-  }
+   
+    }
   nameLettersCount(){
     
     if((this.diseaseForm.value.country.length)<3){
@@ -37,12 +38,22 @@ export class ObtainInputComponent implements OnInit {
   }
   
   onSubmit(name : string){
-    //this.diseaseForm.value.country=name;
-    this.diseaseForm.get('country').setValue(name);;
-    
-    
-  }
+    this.diseaseForm.get('country').setValue(name);
+     //this.diseaseForm.value.country=name;
+     for(let i=0;i<Object.keys(this.datas$).length;i++)
+     {
+      if(((this.datas$[i].country).toLowerCase()).match(name) ) 
+      {
+         this.router.navigate(['./display/'+name]);
+      }
+      else
+      {
+        
+      }
+    }  
+  } 
 }
-
+  
+//this.router.navigate(['/display/','name']);
 
 
