@@ -44,11 +44,13 @@ export class ObtainInputComponent implements OnInit {
      {
       if(((this.datas$[i].country).toLowerCase()).match(name) ) 
       {
+        //this.inList=false;
          this.router.navigate(['./display/'+name]);
       }
       else
       {
         this.inList=true;
+        //return this.inList;
       }
     }  
   } 
