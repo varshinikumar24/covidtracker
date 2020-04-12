@@ -16,8 +16,9 @@ export class ObtainInputComponent implements OnInit {
   diseaseForm: FormGroup;
   countryName="";
   country=""
-  inList=false;
-
+  inList;
+  nameInList;
+  compareValue;
   constructor(private data: DataServiceService,private router: Router) { 
     
     this.diseaseForm=new FormGroup({
@@ -42,17 +43,16 @@ export class ObtainInputComponent implements OnInit {
      //this.diseaseForm.value.country=name;
      for(let i=0;i<Object.keys(this.datas$).length;i++)
      {
-      if(((this.datas$[i].country).toLowerCase()).match(name) ) 
-      {
-        //this.inList=false;
-         this.router.navigate(['./display/'+name]);
+      if((name.toLowerCase()===((this.datas$[i].country).toLowerCase())) || (name === (this.datas$[i].country)) || (name.toUpperCase()===((this.datas$[i].country).toUpperCase())))
+      { 
+        this.router.navigate(['./display/'+name]);
+        break;
       }
       else
       {
         this.inList=true;
-        //return this.inList;
       }
-    }  
+    } 
   } 
 }
 

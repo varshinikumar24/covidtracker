@@ -13,6 +13,7 @@ import {DropdownDirectives} from './shared/dropdown.directives';
 import { ListCountryCountComponent } from './list-country-count/list-country-count.component';
 import {HttpClient} from '@angular/common/http';
 import { CardsDisplayComponent } from './cards-display/cards-display.component';
+import { ErrorComponent } from './error/error.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,14 +21,15 @@ import { CardsDisplayComponent } from './cards-display/cards-display.component';
     DisplayInputComponent,
     DropdownDirectives,
     ListCountryCountComponent,
-    CardsDisplayComponent
+    CardsDisplayComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule.withConfig({warnOnNgModelWithFormControl: 'never'}),
+    ReactiveFormsModule,
     RouterModule  
   ],
   providers: [DataServiceService],

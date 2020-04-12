@@ -14,7 +14,8 @@
             <input type="text" placeholder="Enter details" class="form-control" autocomplete="off" name="countryName"
               formControlName="country" [(ngModel)]="countryName" >
               <p class="help" *ngIf="nameLettersCount() && diseaseForm.controls['country'].touched">Please enter atleast three letters</p>
-               <p class="help" *ngIf="inList"> Oops! Please enter correct country name </p>
+               <p class="help" *ngIf="inList" > Oops! Please enter correct country name </p>
+               <!-- <span #found routerLink='/display/{{countryName}}'></span> -->
               <button  type="submit"  class="btn btn-success" [disabled]="nameLettersCount()">Search</button> <br>  
        </div>
        <div class="form-group">
