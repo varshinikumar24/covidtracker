@@ -14,6 +14,11 @@ import { ListCountryCountComponent } from './list-country-count/list-country-cou
 import {HttpClient} from '@angular/common/http';
 import { CardsDisplayComponent } from './cards-display/cards-display.component';
 import { ErrorComponent } from './error/error.component';
+import {AngularFireModule} from '@angular/fire';
+import { environment } from '../environments/environment';
+import { AngularFireAnalyticsModule } from '@angular/fire/analytics';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import {AngularFireDatabase,AngularFireObject,AngularFireList} from '@angular/fire/database'
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +35,10 @@ import { ErrorComponent } from './error/error.component';
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
-    RouterModule  
+    RouterModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireAnalyticsModule,
+    AngularFirestoreModule
   ],
   providers: [DataServiceService],
   bootstrap: [AppComponent]

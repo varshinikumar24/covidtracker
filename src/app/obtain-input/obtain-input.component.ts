@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 import { Router, RouterModule,ActivatedRoute } from '@angular/router';
 import { FormGroup,  FormControl,  Validators, NgForm } from '@angular/forms';
 import {SortPipe} from '../sort-pipe'
+import {AngularFireDatabase,AngularFireObject,AngularFireList} from '@angular/fire/database'
 
 @Component({
   selector: 'app-obtain-input',
@@ -27,6 +28,7 @@ export class ObtainInputComponent implements OnInit {
    this.data.getDetail().subscribe(
     data => this.datas$ = data 
   );
+  
   }
   ngOnInit(){
    
