@@ -1,7 +1,7 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700);
+//@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700);
 $open-sans: 'Open Sans', sans-serif;
 $roboto-slab: 'Roboto Slab', serif;  
-
+$im-fell-french-canon-sc: 'IM Fell French Canon SC', serif;
 .fullContainer{
     margin: 5% 15%;
     width: 70%;
@@ -20,17 +20,24 @@ table{
     
 }
 table,td {
-    border: 2px solid rgb(149, 190, 202);
+    
+    border: 2px solid rgb(151, 89, 151);
   }
-td{
-  padding:2% 0;
-  font-family: $roboto-slab;
+td,th{
+  padding:2% 1%;
+  
+  color: rgb(76, 1, 99);
+  font-size: 15px;
   }
  
-  h2{text-align: center;
+  h2{
+    text-align: center;
     margin-top: 5%;
     padding-top: 2%;
     color: rgb(32, 73, 85);
+    font-size: 40px;
+    font-family:$im-fell-french-canon-sc;
+    font-weight: 600;
    
 }
 .btn-danger{

@@ -2,25 +2,25 @@
     padding:0 0% 10% 0%;
     margin:0 5% 0 0;
     background-color: hue($color: rgb(130, 195, 211));
-    // background-image: url(https://wallpaperaccess.com/full/6826.jpg);
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    background-image:linear-gradient(#360033,#0b8793) ;
+    
+    background-image:linear-gradient(#04565e,#641a61) ;
     width:100%;
 }
 .cardsContainer1{
-    background-color: rgb(208, 221, 223);
+    //background-color: rgb(208, 221, 223);
     margin:10% 10% 1% 25%;
     padding: 2%; 
-    
+    background-image: linear-gradient(#da4453 ,#89216b );
     width:50%;
     height:50%;
     border-radius: 10px;
     align-items: center;
-    border: 5px solid rgb(20, 85, 105);
+    border: 5px solid white;
+    color:white;
+    font-size: 15px;
 }
 .cardsContainer{
-    background-color: rgb(208, 221, 223);
+    background-image: linear-gradient(#da4453 ,#89216b );
     margin:2% 10% 10% 25%;
     padding: 2%;
    // background-color: hue($color: rgb(130, 195, 211));
@@ -28,9 +28,14 @@
     height:50%;
     border-radius: 10px;
     align-items: center;
-    border: 5px solid rgb(20, 85, 105);
+    border: 5px solid white;
+    color:white;
+    font-size: 15px;;
 }
 .card-img-top{
-    width:8%; 
+    width:10%; 
     margin-left:1%;
+}
+.card-title{
+    font-size: 25px;
 }
