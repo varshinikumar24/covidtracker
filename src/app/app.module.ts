@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { ObtainInputComponent } from './obtain-input/obtain-input.component';
 import { DisplayInputComponent } from './display-input/display-input.component';
 import { DataServiceService } from './data-service.service';
+import { FirebaseDBService } from './firebase-db.service';
 import { RouterModule, Routes} from '@angular/router';
 import {DropdownDirectives} from './shared/dropdown.directives';
 import { ListCountryCountComponent } from './list-country-count/list-country-count.component';
@@ -40,7 +41,7 @@ import {AngularFireDatabase,AngularFireObject,AngularFireList} from '@angular/fi
     AngularFireAnalyticsModule,
     AngularFirestoreModule
   ],
-  providers: [DataServiceService],
+  providers: [DataServiceService,FirebaseDBService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
