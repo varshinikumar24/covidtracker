@@ -12,12 +12,16 @@ import {AngularFireModule} from '@angular/fire';
 export class CardsDisplayComponent implements OnInit {
 
   items: Observable<any[]>;
+  covidItems:Observable<any[]>;
+  currencyItems:Observable<any[]>;
   itemRef : AngularFireList<any[]>;
   constructor(firestore: AngularFirestore,private db:AngularFireDatabase) {
-    // this.itemRef= db.list('/corona');
+    // this.itemRef= db.list('/weather');
     // this.items= this.itemRef.valueChanges();
     // this.items.subscribe(res=>(console.log(this.items)));
-    this.items = db.list('/').valueChanges();
+    this.items= db.list('/weather').valueChanges();
+    this.covidItems = db.list('/corona').valueChanges();
+    this.currencyItems=db.list('/currency').valueChanges();
   }
 
   ngOnInit() {

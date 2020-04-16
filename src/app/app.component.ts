@@ -10,9 +10,5 @@ import {AngularFireDatabase,AngularFireObject,AngularFireList} from '@angular/fi
 })
 export class AppComponent {
   title = 'covidtracker';
-//   items: Observable<any[]>;
- 
-// constructor(firestore: AngularFirestore) {
-//   this.items = firestore.collection('items').valueChanges();
-// }
+
 }
