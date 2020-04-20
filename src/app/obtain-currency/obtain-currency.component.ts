@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-
+import { DataServiceService } from '../data-service.service';
+import { Observable } from 'rxjs';
+import { Router, RouterModule,ActivatedRoute } from '@angular/router';
+import { FormGroup,  FormControl,  Validators, NgForm } from '@angular/forms';
+import {AngularFireDatabase,AngularFireObject,AngularFireList} from '@angular/fire/database'
 @Component({
   selector: 'app-obtain-currency',
   templateUrl: './obtain-currency.component.html',
@@ -7,9 +11,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ObtainCurrencyComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
+//   datas$
+//   currencyForm: FormGroup;
+//   currency="";
+ 
+  constructor(private data: DataServiceService,private router: Router) { 
+    
+   
+//    this.data.getCurrencyDetail().subscribe(
+//     data => this.datas$ = data 
+//   );
+  
   }
+  ngOnInit(){
+   
+    }
+  
+  onSubmit(){
 
+  }
+  
+  
+  
 }
+

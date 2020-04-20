@@ -4,9 +4,9 @@
    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC&display=swap|Roboto+Slab|Open+Sans:400italic,700italic,400,700"> 
 
 <div class="bodyContainer">
-  <div class="container"> <!--newly added >--> 
-    <div class="row"> <!--newly added >--> 
-      <div class="col-xs-12 content"> <!--newly added >--> 
+  <div class="container"> 
+    <div class="row">  
+      <div class="col-xs-12 content"> 
         <h2 >COVID  TRACKER</h2>
         <div class="container ">
             
@@ -18,7 +18,7 @@
                       formControlName="country" [(ngModel)]="countryName" >
                       <p class="help" *ngIf="nameLettersCount() && diseaseForm.controls['country'].touched">Please enter atleast three letters</p>
                        <p class="help" *ngIf="inList" > Oops! Please enter correct country name </p>
-                       <!-- <span #found routerLink='/display/{{countryName}}'></span> -->
+                      
                       <button  type="submit"  class="btn btn-success" [disabled]="nameLettersCount()">Search</button> <br>  
                </div>
                <div class="form-group">
