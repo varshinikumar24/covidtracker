@@ -1,18 +1,48 @@
-<!-- <div class="bodyContainer">
+<div class="bodyContainer">
     <div class="container"> 
       <div class="row">  
         <div class="col-xs-12 content"> 
-          <h2 >CURRENCY  TRACKER</h2>
-          <div class="container ">
-              
-              <div class=" form-container" >
-              <form [formGroup]="currencyForm" (ngSubmit)="onSubmit()" #f="ngForm">
-                 <div class="form-group">
-                     <label >Please enter amount in USD :</label>
-                      <input type="text" placeholder="Enter Amount" class="form-control" autocomplete="off" name="currency"
-                        formControlName="currency" [(ngModel)]="currency" >
+        <h2 >CURRENCY <span style="padding-left: 12px;"> </span> TRACKER </h2>
+        <div class="container ">
+        <div class=" form-container" >
+          <form [formGroup]="currencyForm" (ngSubmit)="onSubmit()" #f="ngForm" >
+            <div class="form-group">
+              <label class="first-label">Enter currency details</label>
+                <table>
+                    <tr>
+                      <td>
+                          <input class="col-md-1" type="text" placeholder="USA" class="form-control" autocomplete="off" name="currencyFrom"
+                            formControlName="currencyFrom" [(ngModel)]="currencyFrom">
+                            <img class="arrow-img" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/softbank/145/downwards-black-arrow_2b07.png" alt="">
+                      
+                      
+                          <input class="currencyTo col-md-3" type="text" placeholder="INR" class="form-control" autocomplete="off" name="currencyTo"
+                              formControlName="currencyTo" [(ngModel)]="currency">
+                    </td>
+                    </tr>
+                </table>
+                <table class="amt">
+                    <tr >
+                      <td>
+                        <p style="margin-right: 2%;">Enter Amount:</p>
+                      </td>
+                      <td>
+                          <input class="textboxInput form-group col-md-6" type="number" placeholder="Enter Amount" class="form-control" autocomplete="off" name="currency"
+                            formControlName="currencyAmt" [(ngModel)]="currency">
+                      </td>
+                    </tr>
+                </table>
                         
-                        <button  type="submit"  class="btn btn-success" >Search</button> <br>  
+                        <div class="row button-listed">
+                        <div class="col-md-1">
+                          <button  type="submit"  class="btn btn-primary" >Search</button> 
+                        </div>   
+                          <div class="col-md-1">
+                            <button class="btn btn-primary" type="button" routerLink="/displayCurrency">Current status of currency List</button>
+                          </div>
+                          
+                        
+                      </div>
                  </div>
                </form>
              </div>
@@ -21,4 +51,4 @@
         </div>
       </div>
     </div>
-   -->
+  

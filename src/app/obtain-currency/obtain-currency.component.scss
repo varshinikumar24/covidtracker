@@ -1,70 +1,94 @@
-// //@import url(http://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC&display=swap|Roboto+Slab|Open+Sans:400italic,700italic,400,700);
-// $open-sans: 'Open Sans', sans-serif;
-// $roboto-slab: 'Roboto Slab', serif;  
-// $im-fell-french-canon-sc: 'IM Fell French Canon SC', serif;
+//@import url(http://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC&display=swap|Roboto+Slab|Open+Sans:400italic,700italic,400,700);
+$open-sans: 'Open Sans', sans-serif;
+$roboto-slab: 'Roboto Slab', serif;  
+$im-fell-french-canon-sc: 'IM Fell French Canon SC', serif;
 
-// .form-container,button{
-//     margin-top:1%; 
-//     align-items: center;
-// }
-// .form-container{
-//     width:100%;
-// }
-// .list{
+.form-container,button{
+    margin-top:1%; 
+    align-items: center;
+}
+.form-container{
+    width:100%;
+}
+.list{
     
-//     color: lightseagreen;
-//     background-color: lightseagreen;
+    color: lightseagreen;
+    background-color: lightseagreen;
     
-// }
-// .dropdown-toggle{
-//     color:white;
-//     background-color: lightseagreen;
-// }
-// .caret{
-//  margin-left: 2%;
-// }
-// h2{
-//     text-align: center;
-//     margin: 10% 0 2% 0;
+}
+.dropdown-toggle{
+    color:white;
+    background-color: lightseagreen;
+}
+.caret{
+ margin-left: 2%;
+}
+h2{
+    text-align: center;
+    margin: 5% 0 2% 0;
     
-//     color: rgb(32, 73, 85);
-//    font-family:$im-fell-french-canon-sc;
-//     font-weight: bolder;
-//     font: size 20%;
-// }
-// .help{
-//     color:red;
-//     margin-top:10px;
-//     font-weight: bold;
-// }
-// .bodyContainer{
+    color: rgb(23, 52, 61);
+   font-family:$im-fell-french-canon-sc;
+    font-weight: bolder;
+    //font: size 50%;
+    font-size: 350%;
+}
+.help{
+    color:red;
+    margin-top:10px;
+    font-weight: bold;
+}
+.bodyContainer{
     
-//     background-image: url(https://wallpapercave.com/wp/wp2300367.jpg);
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     width:100%;
+    background-image: url(https://www.catalunyavanguardista.com/catvan/wp-content/uploads/2017/01/LOMCE-01-INED21.jpg);
+    //https://wallpapercave.com/wp/wp2300367.jpg
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;   
+}
+
+input{
+    width:80%;
+}
+.textboxInput{
+    width:40%;
+}
+label{
+  margin:5px;
+  font-family:$open-sans; 
+}
+.dropdown-menu{
+    height:250px;
+    overflow:scroll;
+}
+.button-listed{
+    margin-top:3%;
+}
+.content{
+    background-color: rgba(248, 190, 113, 0.663);
+    margin:8% 2% 10% 5%;
+    padding:0 0 10% 2%;
+    border-radius: 5%;
+    width: 90%;
+
+}
+.first-label{
+    font-size: 130%;
+    margin-bottom: 1.5%;
+    font-weight: bolder;
+    color: #363636;
     
-// }
-// input{
-//     width:10%;
-// }
-// label{
-//     margin:5px;
-//     color:black;
-//     font-family:$open-sans;
-// }
-// .dropdown-menu{
-//     height:250px;
-//     overflow:scroll;
-// }
-// button{
-//     margin-top:1%;
-// }
-// //newly added
-// .content{
-//     background-color: rgba(248, 190, 113, 0.663);
-//     margin:15% 0% 10% 2%;
-//     padding:0 0 10% 2%;
-    
-//     width: 60%;
-// }
+}
+p{
+   font-weight: bolder;
+   font-size: 15px;
+ 
+}
+.amt{
+    margin-top: 2%;
+    width: 30%;
+}
+.arrow-img{
+    width:20%;
+    margin:5% 0 5% 22%;
+}

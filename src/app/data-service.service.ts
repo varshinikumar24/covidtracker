@@ -19,5 +19,10 @@ export class DataServiceService {
 getCurrencyDetail(){
   return this.http.get('https://currencyapi.net/api/v1/currencies?key=OFknarXJZeuCPf0VQiIw6Pp9WI3BkkwEk0Wh&base=USD')
 }
- 
+ getRateDetail(base){
+  return this.http.get('https://api.exchangeratesapi.io/latest?base='+base);
+ }
+ getCurrencyDisplay(){
+  return this.http.get(' https://api.exchangeratesapi.io/latest?base=USD')
+ }
 }
