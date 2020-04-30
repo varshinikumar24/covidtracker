@@ -6,8 +6,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ListCountryCountComponent } from './list-country-count/list-country-count.component';
 import { CardsDisplayComponent } from './cards-display/cards-display.component';
 import { ErrorComponent } from './error/error.component';
-import { ObtainRegionComponent } from './obtain-region/obtain-region.component';
-import { DisplayWeatherComponent } from './display-weather/display-weather.component';
 import { ObtainCurrencyComponent } from './obtain-currency/obtain-currency.component';
 import { DisplayCurrencyComponent } from './display-currency/display-currency.component'
 const routes: Routes = [
@@ -29,14 +27,6 @@ const routes: Routes = [
     component: ListCountryCountComponent
   },
   {
-    path:'inputRegion',
-    component: ObtainRegionComponent
-  },
-  {
-    path:'displayWeather/:id',
-    component: DisplayWeatherComponent
-  },
-  {
     path:'inputCurrency',
     component: ObtainCurrencyComponent
   },
@@ -44,6 +34,10 @@ const routes: Routes = [
     path:'displayCurrency',
     component: DisplayCurrencyComponent
   },
+ {
+  path:'displaySingle/:id',
+  component: DisplayCurrencyComponent
+ },
   {
     path:'error',
     component: ErrorComponent

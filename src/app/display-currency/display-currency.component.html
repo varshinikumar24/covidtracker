@@ -3,17 +3,28 @@
     <div class="row">
         <div class="col-md-12 ">
             
-            <h2 >List of Currencies and their current value for 1$</h2>
-        
-            <!-- <div class="container tableContainer">
-               <div class="row">
-                   <div class="col-xs-8"> -->
+            <h2 >List of Currencies and their current value for 1$  </h2> 
+    
                     <table class="table">
                         <tr class="heading">
                             <th class="heading">Country</th>
                             <th class="heading">Rate</th>
                         </tr>
-                        <tr> <td >{{(datas$.currencies).INR}}</td><td>{{rate$.rates.INR}}</td></tr>
+                        <tr>
+                            <td>United States Dollar</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr *ngFor="let data of currencySymbol">
+                        <td >
+                            {{datas$["currencies"][data]}}
+                        </td>
+                        <td>
+                            {{rate$["rates"][data]}}
+                        </td>
+                        </tr>
+                        
+                        <!-- <tr> <td >{{(datas$.currencies).INR}}</td><td>{{rate$.rates.INR}}</td></tr>
                         <tr> <td >{{(datas$.currencies).CAD}}</td><td>{{rate$.rates.CAD}}</td></tr>
                         <tr> <td >{{(datas$.currencies).HKD}}</td><td>{{rate$.rates.HKD}}</td></tr>
                         <tr> <td >{{(datas$.currencies).ISK}}</td><td>{{rate$.rates.ISK}}</td></tr>
@@ -45,13 +56,9 @@
                         <tr> <td >{{(datas$.currencies).AUD}}</td><td>{{rate$.rates.AUD}}</td></tr>
                         <tr> <td >{{(datas$.currencies).ILS}}</td><td>{{rate$.rates.ILS}}</td></tr>
                         <tr> <td >{{(datas$.currencies).KRW}}</td><td>{{rate$.rates.KRW}}</td></tr>
-                        <tr> <td >{{(datas$.currencies).PLN}}</td><td>{{rate$.rates.PLN}}</td></tr>
+                        <tr> <td >{{(datas$.currencies).PLN}}</td><td>{{rate$.rates.PLN}}</td></tr> -->
                      
                     </table>
-                   <!-- </div>
-               </div>
-            
-            </div> -->
             <button class="btn btn-danger " data-micron="pop"  routerLink="/" >Cancel</button>
         
         </div>

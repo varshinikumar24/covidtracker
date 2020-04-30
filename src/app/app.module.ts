@@ -20,8 +20,6 @@ import { environment } from '../environments/environment';
 import { AngularFireAnalyticsModule } from '@angular/fire/analytics';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import {AngularFireDatabase,AngularFireObject,AngularFireList} from '@angular/fire/database';
-import { ObtainRegionComponent } from './obtain-region/obtain-region.component';
-import { DisplayWeatherComponent } from './display-weather/display-weather.component';
 import { ObtainCurrencyComponent } from './obtain-currency/obtain-currency.component';
 import { DisplayCurrencyComponent } from './display-currency/display-currency.component'
 @NgModule({
@@ -33,8 +31,6 @@ import { DisplayCurrencyComponent } from './display-currency/display-currency.co
     ListCountryCountComponent,
     CardsDisplayComponent,
     ErrorComponent,
-    ObtainRegionComponent,
-    DisplayWeatherComponent,
     ObtainCurrencyComponent,
     DisplayCurrencyComponent
   ],
