@@ -21,10 +21,11 @@ getCurrencyDetail(){
 }
 getCurrencyRate(){
   //return this.http.get('https://currencyapi.net/api/v1/rates?key=OFknarXJZeuCPf0VQiIw6Pp9WI3BkkwEk0Wh&base=USD')
-  return this.http.get('https://currencyapi.net/api/v1/rates?key=1EDWRfv5vKh2m9NdRQkneV9yhsyDcyZkTJBB&base=USD');
+  //return this.http.get('https://currencyapi.net/api/v1/rates?key=1EDWRfv5vKh2m9NdRQkneV9yhsyDcyZkTJBB&base=USD');
+  return this.http.get('https://api.exchangeratesapi.io/latest?base=USD')
 }
- getRateDetail(base){
-  return this.http.get('https://api.exchangeratesapi.io/latest?base='+base);
+ getRateDetail(){
+  return this.http.get('https://api.exchangeratesapi.io/latest?base=INR');
  }
  getCurrencyDisplay(){
   return this.http.get('https://api.exchangeratesapi.io/latest?base=USD')

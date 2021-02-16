@@ -24,7 +24,7 @@ export class ObtainCurrencyComponent implements OnInit {
   result="";
   symbol="";
   buttonActive=true;
-  currencySymbol=['USA','INR','CAD','HKD','ISK','PHP','DKK','HUF','CZK','GBP','RON','SEK','IDR','INR','BRL','RUB','HRK','JPY','THB','CHF','EUR','MYR','BGN','TRY','CNY','NOK','NZD','ZAR','MXN','SGD','AUD','ILS','KRW','PLN'];
+  currencySymbol=['INR','USD','CAD','HKD','ISK','PHP','DKK','HUF','CZK','GBP','RON','SEK','IDR',,'BRL','RUB','HRK','JPY','THB','CHF','EUR','MYR','BGN','TRY','CNY','NOK','NZD','ZAR','MXN','SGD','AUD','ILS','KRW','PLN'];
   constructor(private data: DataServiceService,private router: Router,private route:ActivatedRoute) { 
     this.currencyForm=new FormGroup({
       'CurrencySymbol' : new FormControl(null),
@@ -32,7 +32,7 @@ export class ObtainCurrencyComponent implements OnInit {
 
    });
    
-  this.data.getCurrencyRate().subscribe(
+  this.data.getRateDetail().subscribe(
     data => this.rates$ = data 
   );
   }

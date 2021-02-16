@@ -34,10 +34,6 @@ const routes: Routes = [
     path:'displayCurrency',
     component: DisplayCurrencyComponent
   },
- {
-  path:'displaySingle/:id',
-  component: DisplayCurrencyComponent
- },
   {
     path:'error',
     component: ErrorComponent

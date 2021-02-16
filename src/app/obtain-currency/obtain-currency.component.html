@@ -14,27 +14,24 @@
                     <p style="margin-right: 2%;color: white;">Enter Currency to be converted:</p>
                     
 
-                    <!-- <input class="currencyFrom" type="text" placeholder="example:USA" class="form-control" autocomplete="off" name="currencyFrom"
-                    formControlName="Cfrom" [(ngModel)]="currencyFrom" > -->
-              
-                     <!-- <img class="arrow-img" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/softbank/145/downwards-black-arrow_2b07.png" alt=""> -->
+                    
                      <div class="inputSym">
-                      <input  type="text" placeholder="ex:INR" class="form-control" autocomplete="off" name="currency"
+                      <input  type="text" placeholder="ex:USD" class="form-control" autocomplete="off" name="currency"
                       formControlName="CurrencySymbol" [(ngModel)]="currency" >
                      </div> 
                      
                   </div>
                   <div class="col-md-4">
-                    <p style="margin-right: 2%;color: white;">Enter Amount in USD:</p>
+                    <p style="margin-right: 2%;color: white;">Enter Amount in INR ( ₹ ):</p>
                     <table>
                       <tr>
                         <td class="inputVal">
                           <input  type="number" placeholder="Amount" class="form-control" autocomplete="off" name="currencyAmt"
                           formControlName="CurrencyAmount" [(ngModel)]="currencyAmt" >
                         </td>
-                        <td>
+                        <!-- <td>
                           <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/facebook/11/heavy-dollar-sign_1f4b2.png" alt="dollar symbol">
-                        </td>
+                        </td> -->
                       </tr>
                     </table>
                     
@@ -45,13 +42,11 @@
               </div>
 
               <p  class = "info" *ngIf="show" >{{"Calculated amount is "+result+" "+symbol}}</p>
-                    
-                
-                       <div class="row">
+                       <!-- <div class="row">
                          <div class="col-md-1 button-Submit">
                           <button  type="submit"  class="btn btn-primary" [disabled]="onActive()" >Calculate</button>
                          </div>
-                       </div>
+                       </div> -->
                        <div class="row">
                         <div class="col-md-1 button-listed">
                           <button class="btn btn-primary" type="button" routerLink="/displayCurrency">Current status of currency List</button>
