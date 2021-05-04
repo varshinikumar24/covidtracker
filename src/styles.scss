@@ -2,6 +2,10 @@
 //@import url(https://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700);
 body{
    // background-color: rgb(29, 3, 3);
-   background-image: linear-gradient(to right bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
-    // background-image: linear-gradient(rgb(26, 25, 25),rgb(15, 15, 15));
+   //background-image: linear-gradient(to right bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    background-image: linear-gradient(to bottom, #130500, #930031);
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }

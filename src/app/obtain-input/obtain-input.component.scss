@@ -3,50 +3,44 @@ $open-sans: 'Open Sans', sans-serif;
 $roboto-slab: 'Roboto Slab', serif;  
 $im-fell-french-canon-sc: 'IM Fell French Canon SC', serif;
 
-.form-container,button{
-    margin-top:1%; 
+.form-container{
+    margin-top:3%; 
     align-items: center;
 }
 .form-container{
     width:100%;
 }
+button{
+    margin-top:2%; 
+    align-items: center;
+}
 .list{
-    
-    color: lightseagreen;
-    background-color: lightseagreen;
-    
+    margin-top: 8%; 
 }
 .dropdown-toggle{
     color:white;
-    background-color: lightseagreen;
+    font-weight:normal;
+    
 }
 .caret{
- margin-left: 2%;
+ margin-left: 3%;
 }
 h2{
     text-align: center;
-    margin: 10% 0 2% 0;
-    
+    margin: 8% 10% 0% 0;
     color: rgb(32, 73, 85);
-   // font-family:"Georgia, serif";
    font-family:$im-fell-french-canon-sc;
     font-weight: bolder;
-    font-size:45px;
+    font-size:55px;
 }
 .help{
     color:red;
-    margin-top:10px;
+    margin-top:15px;
     font-weight: bold;
 }
-.bodyContainer{
-    
-    background-image: url(https://www.publicradiotulsa.org/sites/kwgs/files/styles/medium/public/202003/covid19_with_text.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width:100%;
-}
+
 input{
-    width:50%;
+    width:100%;
 }
 label{
     margin:5px;
@@ -57,13 +51,12 @@ label{
     height:250px;
     overflow:scroll;
 }
-button{
-    margin-top:1%;
-}
-//newly added
+
 .content{
-    background-color: #FFDAB9F1;
-    margin:10% 5% 10% 5%;
-    padding:0 2% 10% 5%;
-    width: 80%;
+    
+    background-color: rgb(224, 200, 200);
+    border-radius: 0%;
+    margin:5% 5% 5% 0%;
+    padding:0 2% 16% 15%;
+    width: 100%;
 }

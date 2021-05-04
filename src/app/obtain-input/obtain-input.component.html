@@ -13,6 +13,8 @@
             <div class=" form-container" >
             <form [formGroup]="diseaseForm" (ngSubmit)="onSubmit(countryName)" #f="ngForm">
                <div class="form-group">
+                <div class="row">
+                  <div class="col-md-5">
                    <label >Please enter country name or select from dropdown :</label>
                     <input type="text" placeholder="Enter details" class="form-control" autocomplete="off" name="countryName"
                       formControlName="country" [(ngModel)]="countryName" >
@@ -20,26 +22,29 @@
                        <p class="help" *ngIf="inList" > Oops! Please enter correct country name </p>
                       
                       <button  type="submit"  class="btn btn-success" [disabled]="nameLettersCount()">Search</button> <br>  
-               </div>
-               <div class="form-group">
-                 <div class="row">
-                   <div class="col-md-2">
-                    <div class="btn  list"  >
-                      <li class="dropdown "  appDropdown>
-                          <a  class="dropdown-toggle" role="button">Country List <span class="caret"></span></a>
-                          <ul class="dropdown-menu" >
-                            <li *ngFor="let data of datas$" ><a href="/display/{{data.country}}">{{data.country}}</a></li>
-                          </ul>
-                      </li>
                     </div>
-                 </div>
-                 <div class="col-md-2">
+
+                    <div class="col-md-4">
+                      <div class="btn btn-primary list"  >
+                        <li class="dropdown "  appDropdown>
+                            <a  class="dropdown-toggle " role="button">Select Country <span class="caret"></span></a>
+                            <ul class="dropdown-menu" >
+                              <li *ngFor="let data of datas$" ><a href="/display/{{data.country}}">{{data.country}}</a></li>
+                            </ul>
+                        </li>
+                      </div>
+                    </div>
+                    
+                </div>
+                </div>
+               <div class="form-group">
+                 
                   <button class="btn btn-primary" type="button" routerLink="/countryList">All Country List</button>
-                </div> 
+                
                       
-                  </div>
+               </div>
                   
-                  </div>
+                  
                 
              </form>
            </div>
