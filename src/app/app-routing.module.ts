@@ -6,8 +6,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ListCountryCountComponent } from './list-country-count/list-country-count.component';
 import { CardsDisplayComponent } from './cards-display/cards-display.component';
 import { ErrorComponent } from './error/error.component';
-import { ObtainCurrencyComponent } from './obtain-currency/obtain-currency.component';
-import { DisplayCurrencyComponent } from './display-currency/display-currency.component'
+
 const routes: Routes = [
   
   {
@@ -25,14 +24,6 @@ const routes: Routes = [
   {
     path:'countryList',
     component: ListCountryCountComponent
-  },
-  {
-    path:'inputCurrency',
-    component: ObtainCurrencyComponent
-  },
-  {
-    path:'displayCurrency',
-    component: DisplayCurrencyComponent
   },
   {
     path:'error',

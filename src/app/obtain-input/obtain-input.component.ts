@@ -42,7 +42,7 @@ export class ObtainInputComponent implements OnInit {
   
   onSubmit(name : string){
     this.diseaseForm.get('country').setValue(name);
-     //this.diseaseForm.value.country=name;
+     
      for(let i=0;i<Object.keys(this.datas$).length;i++)
      {
       if((name.toLowerCase()===((this.datas$[i].country).toLowerCase())) || (name === (this.datas$[i].country)) || (name.toUpperCase()===((this.datas$[i].country).toUpperCase())))

@@ -29,4 +29,3 @@ export class CardsDisplayComponent implements OnInit {
   }
 
 }
-//"auth == null"

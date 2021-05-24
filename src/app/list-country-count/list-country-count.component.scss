@@ -3,32 +3,33 @@ $open-sans: 'Open Sans', sans-serif;
 $roboto-slab: 'Roboto Slab', serif;  
 $im-fell-french-canon-sc: 'IM Fell French Canon SC', serif;
 .fullContainer{
-    margin: 5% 15%;
-    width: 70%;
-    //background-color:rgb(248, 242, 248);
-    background-color: rgb(240, 236, 228);
-    background-color: hue($color: rgb(130, 195, 211));
-  
-    
+    margin: 5% 10%;
+    width: 80%;
+    background-color: rgb(224, 200, 200);  
 }
 strong{
     color:rgb(32, 73, 85);
-    padding:5%;
 }
 table{
+   
     margin:5% 10% 2% 10%;
-    width: 50%;
-    
+    width: 80%;  
 }
 table,td {
-    
-    border: 2px solid rgb(151, 89, 151);
+    background-color: rgba(255, 255, 255, 0.295);
+    //border: 3px solid rgba(121, 115, 121, 0.658);
   }
-td,th{
-  padding:2% 1%;
   
-  color: rgb(76, 1, 99);
+td,th{
+  padding:2% 10% 2% 25%;
   font-size: 15px;
+  text-align: justify;
+  }
+
+  th{
+      background-color: rgba(59, 59, 59, 0.459);
+      color: rgb(255, 255, 255);
+     
   }
  
   h2{
@@ -42,5 +43,5 @@ td,th{
    
 }
 .btn-danger{
-    margin:0% 10% 5%;
+    margin:0% 50% 5%;
 }

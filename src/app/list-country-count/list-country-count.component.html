@@ -1,20 +1,26 @@
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC&display=swap|Roboto+Slab|Open+Sans:400italic,700italic,400,700"> 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC&display=swap|Roboto+Slab|Open+Sans:400italic,700italic,400,700"> 
 <div class="container fullContainer">
     <div class="row">
         <div class="col-md-12">
             <h2>List of Countries and total cases</h2>
-            <table>
-            <tr>
-                <th>Country Name</th>
-                <th>Total Cases</th>
-            </tr>
-                <tr *ngFor="let data of datas$">
-                   <td><strong><a href="/display/{{data.country}}">{{data.country}}</a></strong></td>
-                   <td class="cases"><a href="/display/{{data.country}}">{{data.cases}}</a> </td>
-                </tr>
+            <table class="table">
+                    <thead> 
+                        <tr>
+                            <th scope="col">S.no</th>
+                            <th scope="col">Country Name</th>
+                            <th scope="col">Total Cases</th>
+                        </tr>
+                    </thead> 
+                <tbody>
+                    <tr *ngFor="let data of datas$; index as i" scope="row"> 
+                        <th scope="row">{{ i + 1 }}</th>
+                        <td><strong><a href="/display/{{data.country}}">{{data.country}}</a></strong></td>
+                        <td > <strong>{{data.cases}} </strong></td>
+                    </tr>
+                </tbody>
             </table>
-            <button class="btn btn-danger" routerLink="/" >Cancel</button>
-        
+            
+            <button class="btn btn-danger" routerLink="/" >Cancel</button>   
         </div>
-    </div>
+    </div>  
 </div>

@@ -3,6 +3,7 @@ import { NgModule,LOCALE_ID  } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ObtainInputComponent } from './obtain-input/obtain-input.component';
@@ -20,8 +21,8 @@ import { environment } from '../environments/environment';
 import { AngularFireAnalyticsModule } from '@angular/fire/analytics';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import {AngularFireDatabase,AngularFireObject,AngularFireList} from '@angular/fire/database';
-import { ObtainCurrencyComponent } from './obtain-currency/obtain-currency.component';
-import { DisplayCurrencyComponent } from './display-currency/display-currency.component'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,8 +32,7 @@ import { DisplayCurrencyComponent } from './display-currency/display-currency.co
     ListCountryCountComponent,
     CardsDisplayComponent,
     ErrorComponent,
-    ObtainCurrencyComponent,
-    DisplayCurrencyComponent
+    
   ],
   imports: [
     BrowserModule,
@@ -43,7 +43,8 @@ import { DisplayCurrencyComponent } from './display-currency/display-currency.co
     RouterModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAnalyticsModule,
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    BrowserAnimationsModule
   ],
   providers: [DataServiceService,FirebaseDBService],
   bootstrap: [AppComponent]
